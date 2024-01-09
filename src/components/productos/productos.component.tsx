@@ -40,8 +40,7 @@ export function Productos({ listaProductos, titulo, claseProp }: ProductosCompon
               {slicedProductos.map((slice, sliceIdx) => (
                 <div className={`carousel-item ${sliceIdx === 0 ? 'active' : ''}`} key={sliceIdx}>
                   <div className="container">
-                    <div className="row">
-                      <div className='col-md-2'></div>
+                    <div className='flex justify-center gap-8'>
                       {slice.map((producto: Cerveza) => (
                         <div className={'col-md-2 mb-3'} key={producto.id}>
                           <ProductoCard producto={producto} />
