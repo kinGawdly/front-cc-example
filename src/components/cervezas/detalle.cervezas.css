@@ -1,0 +1,57 @@
+/* src\components\cervezas\detalle.cervezas.css */
+
+.cerveza-nombre {
+  color: var(--Text-Active-Text, #20338B);
+
+  /* H2/Desk XXL */
+  font-family: Montserrat Alternates;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  width: 582px;
+}
+
+
+.cerveza-secundario {
+  color: var(--Text-Active-Text, #20338B);
+
+  /* Text/Body L */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cerveza-precio {
+  color: var(--Text-Active-Text, #20338B);
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cerveza-card-footer {
+  background-color: #3555E8;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 300px;
+}
+
+.cerveza-card-footer-carrito {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+
+.comprar-text {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  background-color: #3555E8;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 28px;
+}

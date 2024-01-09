@@ -1,0 +1,67 @@
+import { CarritoEstado } from './estados/carrito.estado';
+
+
+const carritoActual: CarritoEstado = {
+        usuario: "usuario123",
+        productos: [],
+        total: 1000,
+        descuento: 0,
+        tipo: "tipo_de_pago",
+        monto: 1000,
+        forma_pago: "forma_de_pago",
+        contacto: {
+            calle_numero: '',
+            is_novedades: false,
+            email: '',
+            nombres: '',
+            apellidos: '',
+            rut: '',
+            telefono: '',
+            comuna_id: 0,
+            depto_casa: ''
+        }
+};
+
+function convertirCarritoEstado(carrito: CarritoEstado): CarritoEstado {
+    const productosConvertidos = carrito.productos.map(producto => ({
+      id: producto.id,
+      cantidad: producto.cantidad
+    }));
+
+    function calcularDescuento(carrito: CarritoEstado) {
+        return carrito.descuento || 0;
+    }
+    
+    function obtenerUsuario(carrito: CarritoEstado) {
+        return carrito.usuario || 0;
+    }
+    const descuentoAplicado = calcularDescuento(carrito);
+    const usuarioAsignado = obtenerUsuario(carrito);
+  
+    const carritoConvertido: CarritoEstado = {
+        tipo: carrito.tipo,
+        monto: carrito.total,
+        forma_pago: carrito.forma_pago,
+        total: carrito.total,
+        descuento: descuentoAplicado,
+        productos: productosConvertidos,
+        contacto: {
+            calle_numero: carrito.contacto.calle_numero || '',
+            is_novedades: carrito.contacto.is_novedades || false,
+            email: carrito.contacto.email || '',
+            nombres: carrito.contacto.nombres || '',
+            apellidos: carrito.contacto.apellidos || '',
+            rut: carrito.contacto.rut || '',
+            telefono: carrito.contacto.telefono || '',
+            comuna_id: carrito.contacto.comuna_id || 0,
+            depto_casa: carrito.contacto.depto_casa || ''
+        },
+        usuario: usuarioAsignado.toString()
+    };
+
+    return carritoConvertido;
+  }
+
+const carritoEnFormatoJson = convertirCarritoEstado(carritoActual);
+
+

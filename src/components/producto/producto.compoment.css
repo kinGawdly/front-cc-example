@@ -1,0 +1,82 @@
+/* src\components\producto\producto.compoment.css */
+
+.producto-card {
+  border-radius: 8px 8px 0px 0px;
+  background: var(--background-blue-light-hover, #E1E6FC);
+  min-width:250px;
+  max-width:250px;
+}
+
+.producto-card-img {
+  border: 1em solid #E1E6FC;
+  width: 200px;
+  height: 184px;
+  align-self: stretch;
+  margin-bottom: 0;
+
+}
+
+.producto-card-body {
+  padding-top: 0;
+  background-color: #E1E6FC;
+  border-radius: 0;
+  width: 200px;
+  height: 170px;
+  padding: 16px;
+}
+
+.producto-card-title {
+  color: var(--Text-Default-Text, #343A40);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.producto-card-volumen {
+  color: var(--Text-Default-Text, #343A40);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.producto-card-text {
+  color: #343A40;
+}
+
+.producto-card-nombre {
+  color: #343A40;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.producto-card-text-oferta {
+  color: #BABDBF;
+}
+
+.producto-card-text-secundario {
+  color: #343A40;
+}
+
+.producto-card-footer {
+  background-color: #3555E8;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 200px;
+}
+
+.producto-card-footer-carrito {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

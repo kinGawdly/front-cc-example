@@ -1,0 +1,9 @@
+/* src\components\footer\footer.component.css */
+
+.alerta-maxima {
+    color: '#343A40';
+    font-size: 28;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    word-wrap: break-word;
+}
